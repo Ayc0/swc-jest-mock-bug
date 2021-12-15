@@ -1,18 +1,16 @@
 {
   "name": "swc-jest-mock-bug",
   "version": "1.0.0",
+  "type": "commonjs",
   "description": "",
-  "main": "index.js",
   "scripts": {
     "test": "jest"
   },
   "author": "",
   "license": "MIT",
   "devDependencies": {
-    "@babel/core": "7.16.5",
     "@swc/core": "1.2.120",
     "@swc/jest": "0.2.15",
-    "babel-jest": "27.4.5",
     "jest": "27.4.5"
   }
 }
