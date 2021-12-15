@@ -1,19 +1,18 @@
 import { callFnOne, callFnTwo } from "./index";
-
-const mockedImpl = jest.fn();
+import { fnTwo } from "./to-be-mocked";
 
 jest.mock("./to-be-mocked", () => ({
 	fnOne: () => "mocked",
-	fnTwo: mockedImpl,
+	fnTwo: jest.fn(), // doesn't depend on global var
 }));
 
-describe("", () => {
+describe("correct test without swc", () => {
 	it("fnOne test", () => {
 		expect(callFnOne()).toBe("mocked");
 	});
 	
 	it("fnTwo test", () => {
 		callFnTwo();
-		expect(mockedImpl).toBeCalledTimes(1);
+		expect(fnTwo).toBeCalledTimes(1); // use fnTwo directly
 	});
 });

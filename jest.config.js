@@ -1,7 +1,7 @@
 module.exports = {
 	transform: {
-		"^.+\\.(t|j)sx?$": "@swc/jest",
+		"^.+\\.swc\\.test\\.js$": "@swc/jest",
 	},
-	testRegex: ".*\\.test\\.(js|tsx?)$",
+	testRegex: "^.+\\.test\\.js$",
 	clearMocks: true,
 };
