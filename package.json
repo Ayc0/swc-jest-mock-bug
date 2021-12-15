@@ -1,0 +1,16 @@
+{
+  "name": "swc-jest-mock-bug",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "pnpm jest"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@swc/core": "1.2.120",
+    "@swc/jest": "0.2.15",
+    "jest": "27.4.5"
+  }
+}
