@@ -1,9 +1,9 @@
-import { fnOne, fnTwo } from "./to-be-mocked";
+const { fnOne, fnTwo } = require("./to-be-mocked");
 
-export function callFnOne() {
-	return fnOne();
-}
+exports.callFnOne = () => {
+  return fnOne();
+};
 
-export function callFnTwo() {
-	return fnTwo();
-}
+exports.callFnTwo = () => {
+  return fnTwo();
+};

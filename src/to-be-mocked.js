@@ -1,7 +1,7 @@
-export function fnOne() {
-	return;
-}
+exports.fnOne = () => {
+  return;
+};
 
-export function fnTwo() {
-	return;
-}
+exports.fnTwo = () => {
+  return;
+};

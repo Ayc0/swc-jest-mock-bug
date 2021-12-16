@@ -1,9 +1,9 @@
-import { callFnOne, callFnTwo } from "./index";
-import { fnTwo } from "./to-be-mocked";
+const { callFnOne, callFnTwo } = require("./index");
+const { fnTwo } = require("./to-be-mocked");
 
 jest.mock("./to-be-mocked", () => ({
   fnOne: () => "mocked",
-  fnTwo: jest.fn(), // doesn't depend on global var
+  fnTwo: jest.fn(), // doesn't depend on global var so it works
 }));
 
 describe("correct test", () => {
